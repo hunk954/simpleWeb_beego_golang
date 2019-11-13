@@ -87,6 +87,7 @@ go get github.com/beego/bee
 sudo yum install httpd-tools
 ```
 3. ab使用指南
+
 ![ab](./img/ab_help.png)
 - -n表示请求总数
 - -c表示一次产生的请求数
