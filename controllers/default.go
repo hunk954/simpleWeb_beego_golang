@@ -29,8 +29,8 @@ func(main *MainController) HelloWorld(){
 }
 
 func(main *MainController) LoginIn(){
-	
-	main.TplName = "helloWorld.tpl"
+	main.Data["Id"] = main.Ctx.Input.Param(":id")
+	main.TplName = "loginIn.tpl"
 }
 
 
