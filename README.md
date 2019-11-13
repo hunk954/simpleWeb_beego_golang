@@ -79,4 +79,22 @@ go get github.com/beego/bee
 ![curl](./img/curl.png)
 
 ### 4. ab执行压力测试
+1. ab是什么  
+- ab是apachebench命令的缩写。
+- ab是apache自带的压力测试工具。个人感觉类似ping。
+2. 安装ab
+```
+sudo yum install httpd-tools
+```
+3. ab使用指南
+![ab](./img/ab_help.png)
+- -n表示请求总数
+- -c表示一次产生的请求数
+- -t测试所进行的最大秒数。
+
+4. 压力测试`ab -n 1000 -c 100 http://localhost:8080/login`
+![ab](./img/ab.png)
+
+
+
 
